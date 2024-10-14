@@ -18,6 +18,7 @@ import { alertarERedirecionar, atualizaTextoEditor } from "./documento.js";
 const socket = io();
 >>>>>>> cf7a14947b8c68885b3793593a08a0ad5f60e5a9
 
+
 function selecionarDocumento(nome) {
   socket.emit("selecionar_documento", nome, (texto) => {
     atualizaTextoEditor(texto);
