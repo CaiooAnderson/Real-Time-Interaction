@@ -12,8 +12,6 @@ socket.on("connect_error", (erro) => {
   window.location.href = "/login/index.html";
 })
 
-
-
 function selecionarDocumento(nome) {
   socket.emit("selecionar_documento", nome, (texto) => {
     atualizaTextoEditor(texto);
