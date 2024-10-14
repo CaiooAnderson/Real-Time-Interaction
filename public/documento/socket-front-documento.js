@@ -13,6 +13,7 @@ socket.on("connect_error", (erro) => {
 })
 
 
+
 function selecionarDocumento(nome) {
   socket.emit("selecionar_documento", nome, (texto) => {
     atualizaTextoEditor(texto);
