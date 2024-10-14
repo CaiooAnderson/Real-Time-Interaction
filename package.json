@@ -12,9 +12,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "dotenv": "^16.0.3",
     "express": "^4.21.0",
     "jsonwebtoken": "^8.5.1",
+=======
+    "express": "^4.21.0",
+>>>>>>> cf7a14947b8c68885b3793593a08a0ad5f60e5a9
     "mongodb": "6.9",
     "socket.io": "^4.8.0"
   },

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import "dotenv/config";
 import registrarEventosDocumento from "./registrarEventos/documento.js";
 import registrarEventosInicio from "./registrarEventos/inicio.js";
@@ -19,4 +20,16 @@ nspUsuarios.on("connection", (socket) => {
 io.of("/").on("connection", (socket) => {
   registrarEventosCadastro(socket, io);
   registrarEventosLogin(socket, io);
+=======
+import registrarEventosDocumento from "./registrarEventos/documento.js";
+import registrarEventosInicio from "./registrarEventos/inicio.js";
+import registrarEventosCadastro from "./registrarEventos/cadastro.js";
+
+import io from "./servidor.js";
+
+io.on("connection", (socket) => {
+  registrarEventosInicio(socket, io);
+  registrarEventosDocumento(socket, io);
+  registrarEventosCadastro(socket, io);
+>>>>>>> cf7a14947b8c68885b3793593a08a0ad5f60e5a9
 });
