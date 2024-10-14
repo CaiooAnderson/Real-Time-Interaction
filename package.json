@@ -1,5 +1,5 @@
 {
-  "name": "web-sockets",
+  "name": "alura-docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,21 +8,25 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon servidor/socket-back.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonio-evaldo/alura-docs.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonio-evaldo/alura-docs/issues"
+  },
+  "homepage": "https://github.com/antonio-evaldo/alura-docs#readme",
   "dependencies": {
-<<<<<<< HEAD
     "dotenv": "^16.0.3",
-    "express": "^4.21.0",
+    "express": "^4.18.2",
     "jsonwebtoken": "^8.5.1",
-=======
-    "express": "^4.21.0",
->>>>>>> cf7a14947b8c68885b3793593a08a0ad5f60e5a9
-    "mongodb": "6.9",
-    "socket.io": "^4.8.0"
+    "mongodb": "4.11",
+    "socket.io": "^4.5.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.20"
   }
 }

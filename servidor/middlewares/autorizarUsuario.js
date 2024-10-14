@@ -1,17 +1,17 @@
-import jwt from "jsonwebtoken"
+import jwt from "jsonwebtoken";
 
 function autorizarUsuario(socket, next) {
-    const tokenJwt = socket.handshake.auth.token;
+  const tokenJwt = socket.handshake.auth.token;
 
-    try {
-        jwt.verify(tokenJwt, process.env.SEGREDO_JWT);
+  try {
+    const payloadToken = jwt.verify(tokenJwt, process.env.SEGREDO_JWT);
 
-        next();
-        
-    } catch (erro) {
-        next(erro)
-    }
+    socket.emit("autorizacao_sucesso", payloadToken);
 
+    next();
+  } catch (erro) {
+    next(erro);
+  }
 }
 
-export default autorizarUsuario
+export default autorizarUsuario;

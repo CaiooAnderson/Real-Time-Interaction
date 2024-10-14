@@ -1,26 +1,20 @@
 import { emitirAdicionarDocumento } from "./socket-front-index.js";
-<<<<<<< HEAD
 import { obterCookie, removerCookie } from "./utils/cookies.js";
 
-const tokenJwt = obterCookie("tokenJwt")
+const tokenJwt = obterCookie("tokenJwt");
 
-console.log(tokenJwt)
-=======
->>>>>>> cf7a14947b8c68885b3793593a08a0ad5f60e5a9
+console.log(tokenJwt);
 
 const listaDocumentos = document.getElementById("lista-documentos");
 const form = document.getElementById("form-adiciona-documento");
 const inputDocumento = document.getElementById("input-documento");
-<<<<<<< HEAD
 const botaoLogout = document.getElementById("botao-logout");
 
 botaoLogout.addEventListener("click", () => {
   removerCookie("tokenJwt");
-  alert("Usuário desconectado com sucesso!");
+  alert("Usuário deslogado com sucesso!");
   window.location.href = "/login/index.html";
-})
-=======
->>>>>>> cf7a14947b8c68885b3793593a08a0ad5f60e5a9
+});
 
 form.addEventListener("submit", (evento) => {
   evento.preventDefault();
